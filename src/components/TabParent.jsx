@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Table from './Table';
 import Form from './Form';
+import Products from './Products';
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -53,6 +54,7 @@ export default function TabParent() {
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
           <Tab label="Table" {...a11yProps(0)} />
           <Tab label="Form" {...a11yProps(1)} />
+          <Tab label="Products" {...a11yProps(2)} />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
@@ -60,6 +62,9 @@ export default function TabParent() {
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
         <Form />
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={2}>
+        <Products />
       </CustomTabPanel>
     </Box>
   );

@@ -1,11 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
-    fullName: '',
-    gender: '',
-    city: '',
-    hobbies: [],
-};
+// const initialState = {
+//     fullName: '',
+//     gender: '',
+//     city: '',
+//     hobbies: [],
+// };
+const initialState = [];
 
 const formSlice = createSlice({
     name: 'formSlice',
